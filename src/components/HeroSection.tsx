@@ -1,4 +1,4 @@
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
@@ -20,16 +20,16 @@ export function HeroSection() {
 
           {/* Main headline */}
           <h1 className="mb-6 text-4xl font-bold leading-tight tracking-tight text-foreground opacity-0 animate-fade-up animation-delay-100 sm:text-5xl md:text-6xl">
-            FullStack Engineer
+            Jacob Elbaz
             <br />
-            <span className="text-gradient-accent">SaaS & AI Solutions</span>
+            <span className="text-gradient-accent">FullStack Engineer</span>
           </h1>
 
           {/* Subtitle */}
           <p className="mb-8 text-lg text-muted-foreground opacity-0 animate-fade-up animation-delay-200 sm:text-xl">
-            Building scalable platforms that power thousands of users.
+            Specializing in scalable SaaS platforms and AI-powered solutions.
             <br className="hidden sm:block" />
-            Turning complex problems into elegant, performant solutions.
+            Delivering features end-to-end to 3000+ active users.
           </p>
 
           {/* CTA buttons */}
@@ -47,14 +47,36 @@ export function HeroSection() {
               size="lg"
               className="border-border bg-transparent hover:bg-surface-hover"
             >
-              <a href="mailto:contact@example.com">Get in Touch</a>
+              <a href="mailto:jacobelbz@gmail.com">Get in Touch</a>
             </Button>
+          </div>
+
+          {/* Contact info */}
+          <div className="mb-6 flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground opacity-0 animate-fade-up animation-delay-350">
+            <a
+              href="mailto:jacobelbz@gmail.com"
+              className="flex items-center gap-2 transition-colors hover:text-foreground"
+            >
+              <Mail className="h-4 w-4" />
+              <span>jacobelbz@gmail.com</span>
+            </a>
+            <a
+              href="tel:+972503013489"
+              className="flex items-center gap-2 transition-colors hover:text-foreground"
+            >
+              <Phone className="h-4 w-4" />
+              <span>+972 50 301 3489</span>
+            </a>
+            <span className="flex items-center gap-2">
+              <MapPin className="h-4 w-4" />
+              <span>Ashkelon, Israel</span>
+            </span>
           </div>
 
           {/* Social links */}
           <div className="flex items-center justify-center gap-6 opacity-0 animate-fade-up animation-delay-400">
             <a
-              href="https://github.com"
+              href="https://github.com/JacobElbaz"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
@@ -63,20 +85,13 @@ export function HeroSection() {
               <span>GitHub</span>
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/jacob-elbaz/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               <Linkedin className="h-4 w-4" />
               <span>LinkedIn</span>
-            </a>
-            <a
-              href="mailto:contact@example.com"
-              className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
-            >
-              <Mail className="h-4 w-4" />
-              <span>Email</span>
             </a>
           </div>
         </div>

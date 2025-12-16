@@ -1,9 +1,9 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 
 const socialLinks = [
-  { href: "https://github.com", icon: Github, label: "GitHub" },
-  { href: "https://linkedin.com", icon: Linkedin, label: "LinkedIn" },
-  { href: "mailto:contact@example.com", icon: Mail, label: "Email" },
+  { href: "https://github.com/JacobElbaz", icon: Github, label: "GitHub" },
+  { href: "https://linkedin.com/in/jacob-elbaz/", icon: Linkedin, label: "LinkedIn" },
+  { href: "mailto:jacobelbz@gmail.com", icon: Mail, label: "Email" },
 ];
 
 export function FooterSection() {
@@ -41,7 +41,7 @@ export function FooterSection() {
         {/* Copyright */}
         <div className="mt-8 text-center">
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} All rights reserved.
+            © {new Date().getFullYear()} Jacob Elbaz. All rights reserved.
           </p>
         </div>
       </div>

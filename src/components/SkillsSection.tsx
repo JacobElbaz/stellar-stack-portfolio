@@ -1,19 +1,19 @@
 const skillCategories = [
   {
     title: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Redux", "React Query"],
+    skills: ["JavaScript (ES6)", "TypeScript", "HTML5", "CSS3", "React", "React Native", "Next.js", "Material UI", "Tailwind"],
   },
   {
     title: "Backend",
-    skills: ["NestJS", "Node.js", "Express", "Python", "REST APIs", "GraphQL"],
+    skills: ["Node.js", "NestJS", "Express", "C#", "ASP.NET", "SQL", "REST API", "Postman"],
   },
   {
-    title: "Databases",
-    skills: ["PostgreSQL", "MongoDB", "Redis", "Prisma", "TypeORM"],
+    title: "Databases & DevOps",
+    skills: ["MongoDB", "PostgreSQL", "Docker", "Git", "GitHub", "AWS", "Microsoft Azure"],
   },
   {
-    title: "DevOps & Cloud",
-    skills: ["Azure", "Docker", "Kubernetes", "CI/CD", "GitHub Actions", "Vercel"],
+    title: "Languages",
+    skills: ["Hebrew (Native)", "French (Native)", "English (Professional)"],
   },
 ];
 

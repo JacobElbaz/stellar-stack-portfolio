@@ -3,28 +3,19 @@ import { Award, GraduationCap } from "lucide-react";
 const education = [
   {
     type: "degree",
-    title: "B.Sc. Computer Science",
-    institution: "Technical University",
-    year: "2018",
-    description: "Focus on Software Engineering and Distributed Systems",
+    title: "B.Sc. in Software Engineering",
+    institution: "Sami Shamoon College of Engineering (SCE)",
+    year: "Oct 2019 – June 2023",
+    description: "GPA 86+. Final Project: SpoilMe - AI that predicts movie spoilers based on plot (OpenAI API, GPT-3 completion model).",
   },
 ];
 
 const certifications = [
   {
-    title: "Azure Solutions Architect Expert",
-    issuer: "Microsoft",
-    year: "2023",
-  },
-  {
-    title: "Professional Cloud Developer",
-    issuer: "Google Cloud",
-    year: "2022",
-  },
-  {
-    title: "AWS Certified Developer",
-    issuer: "Amazon Web Services",
-    year: "2021",
+    title: "DevOps Bootcamp",
+    issuer: "Develeap",
+    year: "Nov – Dec 2024",
+    details: "Git, Linux, Docker, AWS EC2/RDS/ECR",
   },
 ];
 
@@ -76,15 +67,20 @@ export function EducationSection() {
               {certifications.map((cert, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-between gap-4 rounded-lg border border-border bg-card p-4 transition-all hover:border-primary/30 hover:bg-surface-hover"
+                  className="rounded-lg border border-border bg-card p-4 transition-all hover:border-primary/30 hover:bg-surface-hover"
                 >
-                  <div>
-                    <h4 className="font-medium text-foreground">{cert.title}</h4>
-                    <p className="text-sm text-muted-foreground">{cert.issuer}</p>
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <h4 className="font-medium text-foreground">{cert.title}</h4>
+                      <p className="text-sm text-muted-foreground">{cert.issuer}</p>
+                      {cert.details && (
+                        <p className="mt-1 text-xs text-muted-foreground/80">{cert.details}</p>
+                      )}
+                    </div>
+                    <span className="shrink-0 font-mono text-xs text-primary">
+                      {cert.year}
+                    </span>
                   </div>
-                  <span className="shrink-0 font-mono text-xs text-primary">
-                    {cert.year}
-                  </span>
                 </div>
               ))}
             </div>

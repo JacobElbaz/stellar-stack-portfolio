@@ -1,42 +1,30 @@
-import { Calendar, ExternalLink } from "lucide-react";
+import { Calendar } from "lucide-react";
 
 const experiences = [
   {
-    title: "Senior FullStack Engineer",
-    company: "TechCorp AI",
-    period: "2022 – Present",
+    title: "FullStack Engineer",
+    company: "LIMOVA.AI",
+    period: "Dec 2024 – Present",
     description:
-      "Developed and maintained an AI-powered SaaS platform serving 3,000+ active users. Led architecture decisions for microservices migration, improving system reliability by 40%.",
-    technologies: ["React", "NestJS", "PostgreSQL", "Azure", "Docker"],
+      "Developed and maintained an AI-powered SaaS platform, serving 3000+ active users. Delivered new features end-to-end, ensuring high performance, scalability, and reliability. Implemented code optimizations and accelerated feature delivery.",
+    technologies: ["React", "NestJS", "MongoDB", "PostgreSQL", "Azure"],
     highlights: [
-      "Reduced API response times by 60% through query optimization",
-      "Implemented real-time collaboration features using WebSockets",
-      "Built CI/CD pipelines reducing deployment time from hours to minutes",
-    ],
-  },
-  {
-    title: "FullStack Developer",
-    company: "StartupHub Inc",
-    period: "2020 – 2022",
-    description:
-      "Built scalable web applications for B2B clients. Collaborated with cross-functional teams to deliver projects on time and within budget.",
-    technologies: ["Next.js", "Node.js", "MongoDB", "AWS"],
-    highlights: [
-      "Delivered 5 major product launches to production",
-      "Mentored junior developers and conducted code reviews",
-      "Established testing standards achieving 85% code coverage",
+      "Serving 3000+ active users on AI-powered platform",
+      "End-to-end feature delivery with high performance",
+      "Code optimizations for scalability and reliability",
     ],
   },
   {
     title: "Frontend Developer",
-    company: "Digital Agency Co",
-    period: "2018 – 2020",
+    company: "XFORCE CONSULTING",
+    period: "Jul 2022 – Dec 2024",
     description:
-      "Created responsive, accessible web interfaces for enterprise clients. Focused on performance optimization and modern UI/UX patterns.",
-    technologies: ["React", "TypeScript", "Redux", "Sass"],
+      "Designed and built a multi-tenant ordering & tracking platform adopted by 3 laboratories and used daily by hundreds of dentists. Developed an intuitive user interface for seamless order placement and case tracking.",
+    technologies: ["React", "Next.js", "ASP.NET", "Azure"],
     highlights: [
-      "Improved Core Web Vitals scores by 45% across all projects",
-      "Built reusable component library used across 10+ projects",
+      "Multi-tenant platform adopted by 3 laboratories",
+      "Daily use by hundreds of dentists",
+      "Intuitive UI for order placement and case tracking",
     ],
   },
 ];
