@@ -6,7 +6,7 @@ const education = [
     title: "B.Sc. in Software Engineering",
     institution: "Sami Shamoon College of Engineering (SCE)",
     year: "Oct 2019 – June 2023",
-    description: "GPA 86+. Final Project: SpoilMe - AI that predicts movie spoilers based on plot (OpenAI API, GPT-3 completion model).",
+    description: "AI Specialization in AI-powered systems and machine learning\nGPA 86+",
   },
 ];
 
@@ -51,7 +51,7 @@ export function EducationSection() {
                     </span>
                   </div>
                   <p className="mb-2 text-sm text-primary">{edu.institution}</p>
-                  <p className="text-sm text-muted-foreground">{edu.description}</p>
+                  <p className="whitespace-pre-line text-sm text-muted-foreground">{edu.description}</p>
                 </div>
               ))}
             </div>

@@ -8,9 +8,9 @@ const navLinks = [
 ];
 
 const socialLinks = [
-  { href: "https://github.com", icon: Github, label: "GitHub" },
-  { href: "https://linkedin.com", icon: Linkedin, label: "LinkedIn" },
-  { href: "mailto:contact@example.com", icon: Mail, label: "Email" },
+  { href: "https://github.com/JacobElbaz", icon: Github, label: "GitHub" },
+  { href: "https://linkedin.com/in/jacob-elbaz/", icon: Linkedin, label: "LinkedIn" },
+  { href: "mailto:jacobelbz@gmail.com", icon: Mail, label: "Email" },
 ];
 
 export function Navigation() {

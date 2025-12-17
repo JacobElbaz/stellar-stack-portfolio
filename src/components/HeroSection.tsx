@@ -1,4 +1,4 @@
-import { ArrowDown, Github, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
@@ -50,54 +50,10 @@ export function HeroSection() {
               <a href="mailto:jacobelbz@gmail.com">Get in Touch</a>
             </Button>
           </div>
-
-          {/* Contact info */}
-          <div className="mb-6 flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground opacity-0 animate-fade-up animation-delay-350">
-            <a
-              href="mailto:jacobelbz@gmail.com"
-              className="flex items-center gap-2 transition-colors hover:text-foreground"
-            >
-              <Mail className="h-4 w-4" />
-              <span>jacobelbz@gmail.com</span>
-            </a>
-            <a
-              href="tel:+972503013489"
-              className="flex items-center gap-2 transition-colors hover:text-foreground"
-            >
-              <Phone className="h-4 w-4" />
-              <span>+972 50 301 3489</span>
-            </a>
-            <span className="flex items-center gap-2">
-              <MapPin className="h-4 w-4" />
-              <span>Ashkelon, Israel</span>
-            </span>
-          </div>
-
-          {/* Social links */}
-          <div className="flex items-center justify-center gap-6 opacity-0 animate-fade-up animation-delay-400">
-            <a
-              href="https://github.com/JacobElbaz"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
-            >
-              <Github className="h-4 w-4" />
-              <span>GitHub</span>
-            </a>
-            <a
-              href="https://linkedin.com/in/jacob-elbaz/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
-            >
-              <Linkedin className="h-4 w-4" />
-              <span>LinkedIn</span>
-            </a>
-          </div>
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-0 animate-fade-in animation-delay-600">
+        <div className="mt-8 flex justify-center opacity-0 animate-fade-in animation-delay-600">
           <a
             href="#skills"
             className="flex flex-col items-center gap-2 text-muted-foreground transition-colors hover:text-primary"

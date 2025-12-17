@@ -52,13 +52,13 @@ export function ExperienceSection() {
               className="group relative grid gap-4 md:grid-cols-[120px_1fr] md:gap-8"
             >
               {/* Date column */}
-              <div className="flex items-start gap-2 text-sm text-muted-foreground md:flex-col md:items-end md:text-right">
+              <div className="flex items-start gap-2 text-sm text-muted-foreground md:flex-col md:items-end md:text-right md:pr-4">
                 <Calendar className="h-4 w-4 md:hidden" />
                 <span className="font-mono">{exp.period}</span>
               </div>
 
               {/* Timeline dot */}
-              <div className="absolute left-[116px] top-1 hidden h-3 w-3 rounded-full border-2 border-primary bg-background md:block" />
+              <div className="absolute left-[115px] top-1 hidden h-3 w-3 rounded-full border-2 border-primary bg-background md:block" />
 
               {/* Content */}
               <div className="rounded-lg border border-border bg-card p-6 transition-all hover:border-primary/30 hover:bg-surface-hover md:ml-4">
