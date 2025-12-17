@@ -1,31 +1,62 @@
 import { ExternalLink, Github, Users, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const projects = [
+type Project = {
+  id: number;
+  title: string;
+  category: string;
+  image: string;
+  description: string;
+  technologies: string[];
+  metrics: { users: string; performance: string };
+  links: { github?: string; live?: string };
+};
+
+const projects: Project[] = [
   {
-    title: "AI Analytics Platform",
+    id: 1,
+    title: "Virtual Penpal",
+    category: "web app",
+    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop",
     description:
-      "Real-time analytics dashboard with AI-powered insights. Processes millions of events daily with sub-second query response times.",
-    technologies: ["React", "NestJS", "PostgreSQL", "Redis", "OpenAI"],
-    metrics: { users: "3,000+", performance: "99.9% uptime" },
-    links: { github: "#", live: "#" },
+      "Innovative web application leveraging artificial intelligence to create virtual penpal experiences for children, facilitating cultural education and global awareness through interactive learning.",
+    technologies: ["React", "TypeScript", "Redux", "Vite", "Tailwind", "OpenAI", "NestJS", "MongoDB"],
+    metrics: { users: "5K+ children", performance: "AI response <500ms" },
+    links: { live: "https://www.penpaloo.io/" },
   },
   {
-    title: "E-Commerce Microservices",
+    id: 2,
+    title: "Food Scanner",
+    category: "mobile",
+    image: "https://plus.unsplash.com/premium_photo-1664305032567-2c460e29dec1?w=600&h=400&fit=crop",
     description:
-      "Scalable e-commerce backend built with microservices architecture. Handles high-traffic sales events without degradation.",
-    technologies: ["Node.js", "MongoDB", "Docker", "Kubernetes", "RabbitMQ"],
-    metrics: { users: "50K+ orders/day", performance: "<100ms latency" },
-    links: { github: "#" },
+      "Cross-platform mobile application, featuring advanced barcode scanning technology to provide consumers with essential product information and nutritional data.",
+    technologies: ["React Native", "Expo", "TypeScript", "Barcode Scanner", "iOS", "Android"],
+    metrics: { users: "10K+ downloads", performance: "<2s scan time" },
+    links: { live: "https://www.kaspenu.org/" },
   },
   {
-    title: "Developer Toolkit CLI",
+    id: 3,
+    title: "Dental Laboratories Client Portal",
+    category: "portal",
+    image: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=1740?w=600&h=400&fit=crop",
     description:
-      "Open-source CLI tool for automating development workflows. Includes code generation, testing utilities, and deployment scripts.",
-    technologies: ["TypeScript", "Node.js", "Commander.js"],
-    metrics: { users: "500+ stars", performance: "NPM downloads: 10K+" },
-    links: { github: "#" },
+      "Comprehensive client portal solutions developed for dental laboratories, delivering streamlined management tools and enhanced operational efficiency for dental professionals.",
+    technologies: ["React", "Next.js", "Material UI"],
+    metrics: { users: "500+ professionals", performance: "99.9% uptime" },
+    links: { live: "https://hyperdentaire.fr/" },
   },
+  // {
+  //   id: 4,
+  //   title: "Audio Prosthetics Laboratory Client Portal",
+  //   category: "portal",
+  //   image: "https://plus.unsplash.com/premium_photo-1673351535183-fab0f7be7cd5?w=600&h=400&fit=crop",
+  //   description:
+  //     "Specialized client portal solution developed for an audio prosthetics laboratory, offering comprehensive management tools tailored for hearing aid professionals and their clients.",
+  //   technologies: ["React", "Node.js", "PostgreSQL", "TypeScript"],
+  //   metrics: { users: "300+ professionals", performance: "99.8% uptime" },
+  //   links: { live: "https://otolab3d.com/" },
+  // },
 ];
 
 export function ProjectsSection() {
@@ -42,13 +73,16 @@ export function ProjectsSection() {
 
         {/* Projects grid */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <div
-              key={index}
+              key={project.id}
               className="group flex flex-col rounded-lg border border-border bg-card transition-all hover:border-primary/30 hover:glow-sm"
             >
               {/* Card header */}
               <div className="border-b border-border p-6">
+                <span className="mb-2 inline-block font-mono text-xs uppercase tracking-wider text-primary">
+                  {project.category}
+                </span>
                 <h3 className="mb-2 text-lg font-semibold text-foreground">
                   {project.title}
                 </h3>
