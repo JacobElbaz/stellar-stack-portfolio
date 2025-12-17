@@ -1,73 +1,157 @@
-# Welcome to your Lovable project
+# Portfolio - Jacob Elbaz
 
-## Project info
+Modern and responsive professional portfolio showcasing my skills, experience, and projects as a FullStack Engineer.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🚀 Technologies
 
-## How can I edit this code?
+This project is built with a modern and performant stack:
 
-There are several ways of editing your application.
+- **React 18** - Modern UI library
+- **TypeScript** - Static typing for better maintainability
+- **Vite** - Ultra-fast build tool
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - Accessible and customizable UI components
+- **React Router** - Client-side routing
+- **Lucide React** - Modern icons
 
-**Use Lovable**
+## 📋 Prerequisites
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Before getting started, make sure you have installed:
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Node.js** (version 18 or higher) - [Install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **npm** or **bun** (package manager)
 
-**Use your preferred IDE**
+## 🛠️ Installation
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. **Clone the repository**
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+```bash
 git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+cd stellar-stack-portfolio
 ```
 
-**Edit a file directly in GitHub**
+2. **Install dependencies**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm install
+# or with bun
+bun install
+```
 
-**Use GitHub Codespaces**
+3. **Start the development server**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run dev
+# or with bun
+bun run dev
+```
 
-## What technologies are used for this project?
+The site will be accessible at `http://localhost:8080`
 
-This project is built with:
+## 📁 Project Structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+stellar-stack-portfolio/
+├── src/
+│   ├── components/          # Reusable React components
+│   │   ├── ui/              # shadcn/ui components
+│   │   ├── HeroSection.tsx  # Hero section
+│   │   ├── SkillsSection.tsx # Skills section
+│   │   ├── ExperienceSection.tsx # Experience section
+│   │   ├── ProjectsSection.tsx # Projects section
+│   │   ├── EducationSection.tsx # Education section
+│   │   ├── Navigation.tsx   # Main navigation
+│   │   └── FooterSection.tsx # Footer
+│   ├── pages/               # Application pages
+│   ├── hooks/               # Custom React hooks
+│   ├── lib/                 # Utilities and helpers
+│   └── main.tsx             # Application entry point
+├── public/                  # Static assets
+└── package.json            # Dependencies and scripts
+```
 
-## How can I deploy this project?
+## 🎨 Portfolio Sections
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+- **Hero** - Main presentation with CTA
+- **Skills** - Technical skills
+- **Experience** - Professional journey
+- **Projects** - Completed projects with metrics
+- **Education** - Academic background
+- **Footer** - Contact information and links
 
-## Can I connect a custom domain to my Lovable project?
+## 📜 Available Scripts
 
-Yes, you can!
+```bash
+# Development
+npm run dev          # Start development server
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+# Build
+npm run build        # Production build
+npm run build:dev    # Development build
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+# Code Quality
+npm run lint         # Check code with ESLint
+
+# Preview
+npm run preview      # Preview production build
+```
+
+## 🚢 Deployment
+
+### Production Build
+
+```bash
+npm run build
+```
+
+Optimized files will be generated in the `dist/` folder.
+
+### Deployment Options
+
+The project can be deployed on any platform that supports static sites:
+
+- **Vercel** - Automatic deployment from Git
+- **Netlify** - Continuous deployment
+- **GitHub Pages** - Free hosting
+- **Cloudflare Pages** - Optimal performance
+
+### Example with Vercel
+
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+```
+
+## 🎯 Customization
+
+### Modify Personal Information
+
+Data is directly integrated into the components:
+
+- `src/components/HeroSection.tsx` - Main information
+- `src/components/ExperienceSection.tsx` - Professional experience
+- `src/components/ProjectsSection.tsx` - Projects
+- `src/components/EducationSection.tsx` - Education
+- `src/components/SkillsSection.tsx` - Skills
+
+### Customize Colors
+
+Colors are defined in `tailwind.config.ts` via custom CSS variables in `src/index.css`.
+
+## 📝 License
+
+This project is private and personal.
+
+## 📧 Contact
+
+For any questions or suggestions, feel free to reach out:
+
+- Email: jacobelbz@gmail.com
+- Portfolio: [Your portfolio URL]
+
+---
+
+Built with ❤️ by Jacob Elbaz
