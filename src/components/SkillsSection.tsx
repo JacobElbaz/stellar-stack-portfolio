@@ -1,15 +1,15 @@
 const skillCategories = [
   {
     title: "Frontend",
-    skills: ["JavaScript (ES6)", "TypeScript", "HTML5", "CSS3", "React", "React Native", "Next.js", "Material UI", "Tailwind"],
+    skills: ["React", "React Native", "TypeScript", "Vite", "Next.js", "Redux", "Material UI", "Tailwind"],
   },
   {
     title: "Backend",
-    skills: ["Node.js", "NestJS", "Express", "C#", "ASP.NET", "SQL", "REST API", "Postman"],
+    skills: ["Node.js", "NestJS", "Express", "SQL", "REST API", "Postman", "OpenAI"],
   },
   {
     title: "Databases & DevOps",
-    skills: ["MongoDB", "PostgreSQL", "Docker", "Git", "GitHub", "AWS", "Microsoft Azure"],
+    skills: ["MongoDB", "PostgreSQL", "Docker", "Git", "GitHub", "Azure"],
   },
   {
     title: "Languages",
