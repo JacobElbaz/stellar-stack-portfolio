@@ -15,7 +15,8 @@ const experiences = [
     ],
   },
   {
-    title: "Frontend Developer",
+    title: "FullStack Developer",
+    subtitle: "Frontend Oriented",
     company: "XFORCE CONSULTING",
     period: "Jul 2022 – Dec 2024",
     description:
@@ -63,8 +64,13 @@ export function ExperienceSection() {
               {/* Content */}
               <div className="rounded-lg border border-border bg-card p-6 transition-all hover:border-primary/30 hover:bg-surface-hover md:ml-4">
                 <div className="mb-4">
-                  <h3 className="text-lg font-semibold text-foreground">
+                  <h3 className="text-lg font-semibold text-foreground flex items-center gap-2">
                     {exp.title}
+                    {exp.subtitle && (
+                      <span className="font-mono text-sm text-muted-foreground font-normal">
+                        ({exp.subtitle})
+                      </span>
+                    )}
                   </h3>
                   <p className="font-mono text-sm text-primary">{exp.company}</p>
                 </div>
